@@ -31,9 +31,13 @@ In the jupyter notebook "skinLesionTriage" under notebooks you find the data pre
 
 ## Classical pipeline
 
-The classical pipeline can be found under notebooks. You need to check if the project dir is set correctly. Some of the data load variables could fail at the first run because the files are not created yet. 
+This project also includes a balanced classical pipeline for skin lesion triage. It is based on simple image features and a probabilistic classifier, so it is easier to understand than a deep learning model. The goal is to separate benign lesions from malignant ones while keeping the decision process clear and stable.
 
-For running the classical pipeline just run each cell after one another from top to bottom. 
+The classical pipeline can be found in the notebooks folder. Before running it, make sure the project path is set correctly and that the preprocessing step has already been completed, because the split files and other intermediate files must exist first. If the data folders are not in the expected place, some loading cells may fail on the first run.
+
+To run the pipeline, open the notebook and execute the cells from top to bottom. The pipeline first loads the images, then builds the input features, and finally trains and tests the model. It also uses a balanced setup so that the classes are treated more evenly during training and evaluation.
+
+This classical approach is useful as a baseline because it is fast, simple, and easy to explain. It also gives a good comparison point for the modern pipeline, which uses a deeper neural network.
 
 ## Modern Pipeline
 
