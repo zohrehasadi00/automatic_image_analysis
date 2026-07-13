@@ -19,10 +19,9 @@ dataFolder
 |
 ├── histogram
 │   └── histograms will be saved here
-├── models
-│   └── modern pipeline models
-│  
-└── README.md
+└── models
+    └── modern pipeline models
+
 </pre>
 
 The only part you definitly need is the HAM10000 dataset. This can bedownloaded [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T). Create a dir for the project, inside a data dir, in the data dir the raw dir and then extract the images into the raw dir in the two seperate folders. 
